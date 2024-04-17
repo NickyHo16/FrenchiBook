@@ -1,0 +1,11 @@
+
+<app-profile-row [canfollow]="false" ></app-profile-row>
+
+<b class="fontGrechen">add friends </b>
+
+<app-profile-row 
+    *ngFor="let i of [0,1,2,3]" 
+    [name]="names[i]"  
+    [description]="texts[i]"
+    [img]="images[i]">
+</app-profile-row>

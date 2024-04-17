@@ -1,0 +1,32 @@
+.profile-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+
+    .profileDescription{
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+        display: flex;
+    }
+
+    .name{
+        width: 120px;
+    }
+
+    a {
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+}

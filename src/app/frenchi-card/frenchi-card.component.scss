@@ -1,0 +1,39 @@
+.card{
+    min-height: 550px;    
+    overflow: hidden; // wenn etwas aus der Karte herausläuft, wird es nicht angezeigt
+    position: relative;
+    margin-bottom: 50px;
+    img{
+        width: 100%;
+    }
+
+    p{
+        padding-left: 16px;
+        padding-right: 16px;
+        color: rgba(0,0,0, 0.8);
+        font-size: 20px;
+        
+    }
+
+    button{
+        position: absolute;
+        width: 50%;
+        height: 32px;
+        bottom: 0;
+        background-color: white;
+        //border: 1px solid rgba(0,0,0, 0.3);
+        border: unset;
+        border-top:1px solid rgba(0,0,0, 0.1); 
+        cursor: pointer;
+        &:first-child{
+            left: 0;
+        }
+        &:last-child{
+            right: 0;
+            border-left: 1px solid rgba(0,0,0, 0.1);
+        }
+        &:hover{
+            background-color: rgba(0,0,0, 0.05);
+        }
+    }
+}
